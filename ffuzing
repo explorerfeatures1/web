@@ -1,0 +1,2 @@
+ffuzing via saving file  in burpsuite
+ffuf -request request.txt -w /usr/share/wordlists/rockyou.txt
