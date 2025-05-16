@@ -3,3 +3,6 @@ ffuf -request request.txt -w /usr/share/wordlists/rockyou.txt
 
 #ffuzing directory with basic auth in website
 gobuster dir -u https://example:3443 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -U dctf -P 'o}{jldjfkjfoz0n6o*' -k`
+
+#Вход на сайт по логину и паролю без формы авторизации
+https://username:password@81.10.10.10:port/
