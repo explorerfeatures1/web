@@ -1,0 +1,10 @@
+смотрим директоию explore
+скачиваем пакеты через git clone
+# Просмотр секретов API ключей и т.д. 
+../gitleaks detect -v
+docker login reg.example.ry -u users -p password
+
+#скачивание образа 
+docker pull reg.example.ry/external/manticore-custome 
+# запуск контейнера
+docker run -it --rm reg.example.ry/external/manticore-custom:5.0.2-extra bash
