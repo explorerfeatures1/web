@@ -4,5 +4,9 @@ ffuf -request request.txt -w /usr/share/wordlists/rockyou.txt
 #ffuzing directory with basic auth in website
 gobuster dir -u https://example:3443 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -U dctf -P 'o}{jldjfkjfoz0n6o*' -k
 
+#Если ошибка 401 (Length: 179). To continue please exclude the status code or the length
+gobuster dir -u https://example:1443 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -k -t 30 --exclude-length 179
+
+
 #Вход на сайт по логину и паролю без формы авторизации
 https://username:password@81.10.10.10:port/
