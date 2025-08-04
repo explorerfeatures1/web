@@ -1,0 +1,8 @@
+nmap 
+вставляем  в файл scan.sh
+#!/bin/bash
+ports=$(nmap -p- --min-rate=500 $1 | grep ^[0-9] | cut -d '/' -f 1 | tr '
+' ',' | sed s/,$//)
+nmap -p$ports -A sudo $1
+
+bash scan.sh target - запуск
