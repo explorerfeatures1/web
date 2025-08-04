@@ -12,3 +12,5 @@ bash scan.sh target - запуск
 proxychains nmap -sS -Pn -T1 --scan-delay 5s --max-parallelism 1 -n -v example.com
 sudo dirsearch -u example.com -e --random-agents --timeout=20 --delay=$(shuf -i 5-20 -n 1) -t 1
 proxychains sudo dirsearch -u https://example.com/  --timeout=20 --delay=$(shuf -i 5-20 -n 1) -t 1
+
+urlfinder -d example.com
