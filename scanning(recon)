@@ -18,3 +18,5 @@ proxychains sudo dirsearch -u https://example.com/  --timeout=20 --delay=$(shuf 
 echo example.com | dnsx -recon # поиск dns записей
 
 urlfinder -d example.com поиск активных ссылок
+
+curl -s https://example.com | grep -oP '(?<=src=")[^"]+\.js' | sort -u # поиск js файлов
