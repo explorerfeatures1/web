@@ -20,3 +20,7 @@ echo example.com | dnsx -recon # поиск dns записей
 urlfinder -d example.com поиск активных ссылок
 
 curl -s https://example.com | grep -oP '(?<=src=")[^"]+\.js' | sort -u # поиск js файлов
+
+
+#сканирование эндпоинтов с использованием сессионной куки пользователя
+katana -u https://site.com -H "сессия куки после аутенфикации" -xhr -jsl -aff
