@@ -10,3 +10,6 @@ gobuster dir -u https://example:1443 -w /usr/share/wordlists/seclists/Discovery/
 
 #Вход на сайт по логину и паролю без формы авторизации
 https://username:password@81.10.10.10:port/
+
+№сканирование эндпоинтов с использованием сессионной куки пользователя
+katana -u https://site.com -H "сессия куки после аутенфикации" -xhr -jsl -aff
