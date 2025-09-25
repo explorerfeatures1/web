@@ -1,5 +1,7 @@
 ffuzing via saving file  in burpsuite
 ffuf -request request.txt -w /usr/share/wordlists/rockyou.txt
+# recursive scanning of directories
+ffuf -u http://target[.]com/FUZZ -w common.txt -recursion
 
 #ffuzing directory with basic auth in website
 gobuster dir -u https://example:3443 -w /usr/share/wordlists/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -U dctf -P 'o}{jldjfkjfoz0n6o*' -k
