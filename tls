@@ -1,0 +1,3 @@
+TLS check
+openssl s_client -connect example.com:443 -servername example.com -tls1_2 </dev/null 2>/dev/null | grep -E "Protocol|handshake"
+-tls1_2(нужно перебирать)
