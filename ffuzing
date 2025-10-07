@@ -14,3 +14,6 @@ gobuster dir -u https://example:1443 -w /usr/share/wordlists/seclists/Discovery/
 https://username:password@81.10.10.10:port/
 
 
+фаззинг параметров
+ffuf -w parameters.txt -u https://target.com/admin/dowload\?FUZZ\=/test mc 200-500 -fc 400 
+https://gist.github.com/cnmiller/f98fce0651ccba637770bb4b900b1fc5 словарь для перебора параметров
