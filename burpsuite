@@ -1,0 +1,4 @@
+установка версии java 
+
+update-alternatives --list java
+sudo update-alternatives --set java /usr/lib/jvm/jdk-22.0.2-oracle-x64/bin/java
