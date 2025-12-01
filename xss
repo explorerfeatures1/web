@@ -1,3 +1,6 @@
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
+
+
 xsser -u https://example.com -c 20 --Cl
 
 
