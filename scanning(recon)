@@ -28,3 +28,6 @@ katana -u https://site.com -H "сессия куки после аутенфик
 
 dnsrecon -d domain -a -n ip_domain
 
+
+ sudo nuclei -u https://example.com/ --headless
+
