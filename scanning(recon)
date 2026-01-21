@@ -1,3 +1,6 @@
+проверка "живых сайтов"
+ cat list.txt | httpx -status-code -title -content-length | tee results.txt
+
 nmap 
 вставляем  в файл scan.sh
 #!/bin/bash
