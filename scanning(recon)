@@ -1,3 +1,5 @@
+https://profundis.io/ - поиск сабдоменов
+
 проверка "живых сайтов"
  cat list.txt | httpx -status-code -title -content-length | tee results.txt
 
