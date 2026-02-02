@@ -1,5 +1,5 @@
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection
-
+https://shazzer.co.uk/vectors/697ca88a274f790a0323f684   проверка разрешенных тэгов
 
 xsser -u https://example.com -c 20 --Cl
 
