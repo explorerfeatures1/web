@@ -21,3 +21,11 @@ https://github.com/frohoff/ysoserial/issues/203
     Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
 
 Вставляем  payload url encode all characters 
+
+#просмотр версии java
+update-alternatives --list java
+/usr/lib/jvm/java-21-openjdk-amd64/bin/java
+/usr/lib/jvm/jdk-22.0.2-oracle-x64/bin/java
+/usr/lib/jvm/jdk-25.0.1-oracle-x64/bin/java
+# установить версию java                                                                                                         
+sudo update-alternatives --set java /usr/lib/jvm/jdk-22.0.2-oracle-x64/bin/jav
