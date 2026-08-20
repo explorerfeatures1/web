@@ -2,3 +2,4 @@ bbot
 subfunder с api ключами в yaml
 гугл доркинг
 поиски  censys shodan 
+theHarvester -d example.ru -b dnsdumpster
