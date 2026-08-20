@@ -3,3 +3,7 @@ subfunder с api ключами в yaml
 гугл доркинг
 поиски  censys shodan 
 theHarvester -d example.ru -b dnsdumpster
+dnsrecon -d finombudsman.ru -t std   
+ dig TXT example.ru +short | grep spf
+nslookup -type=TXT example.ru | grep spf 
+https://mxtoolbox.com/
