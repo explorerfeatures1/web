@@ -1,9 +1,32 @@
+Основа: Внешка от Pro:Pentest
+
 bbot
 subfunder с api ключами в yaml
 гугл доркинг
 поиски  censys shodan 
 theHarvester -d example.ru -b dnsdumpster
-dnsrecon -d finombudsman.ru -t std   
+dnsrecon -d example.ru -t std   
+python3 github-subdomains.py -d example.ru -t <github_token>
+amass enum -passive -d example.ru
+amass enum -v -brute -min-for-recursive -3 -d example.ru  -w /usr/share/wordlists/seclists/Discovery/DNS/bitquark-subdomains-top100000.txt 
+waybackurls example.ru 
+
+
+urlfinder -d example.ru -all -o url.txt  #поиск url
+
+
+
  dig TXT example.ru +short | grep spf
 nslookup -type=TXT example.ru | grep spf 
 https://mxtoolbox.com/
+whois.ru/
+https://robtex.com/
+
+dig txt _dmarc.example.ru +short  
+ dig txt default._bimi.example.ru +short
+ dig mx example.ru +short  
+
+
+auxillary/scanner/http/owa_login
+nmap --script http-ntlm-info --script-args http-ntlm-info.root=/
+msmailprobe
