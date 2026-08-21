@@ -2,7 +2,7 @@
 
 bbot
 subfunder с api ключами в yaml
-гугл доркинг
+ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-110000.txt  -u https://example.ru -H "Host: FUZZ.example.ru" -fs 159 
 поиски  censys shodan 
 theHarvester -d example.ru -b dnsdumpster
 dnsrecon -d example.ru -t std   
