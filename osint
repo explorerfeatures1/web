@@ -26,6 +26,8 @@ dig txt _dmarc.example.ru +short
  dig txt default._bimi.example.ru +short
  dig mx example.ru +short  
 
+sudo swaks --to explorerfeatures1@mypost.ru --from ceo@example.ru --server mx.example.ru
+
 
 auxillary/scanner/http/owa_login
 nmap --script http-ntlm-info --script-args http-ntlm-info.root=/
