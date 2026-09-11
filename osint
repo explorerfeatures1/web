@@ -32,3 +32,4 @@ https://github.com/ushst/exchange-recon?ysclid=mtx81kgcrm809885126  recon exchan
 auxillary/scanner/http/owa_login
 nmap --script http-ntlm-info --script-args http-ntlm-info.root=/
 msmailprobe
+https://github.com/numanturle/CVE-2022-41040?ysclid=mtx94tmn3d897780015
