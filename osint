@@ -27,6 +27,14 @@ dig txt _dmarc.example.ru +short
  dig mx example.ru +short  
 
 sudo swaks --to explorerfeatures1@mypost.ru --from ceo@example.ru --server mx.example.ru
+sudo swaks --to comm@victim.ru \                                                   
+      --from prr@victim.ru \
+      --server 10.10.10.10:25 \
+      --header "Subject: Pentest Spoofing Test - Please ignore" \
+      --body "This is a security test. Please ignore." \
+      --tls
+
+
 
 https://github.com/ushst/exchange-recon?ysclid=mtx81kgcrm809885126  recon exchange
 auxillary/scanner/http/owa_login
