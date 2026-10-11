@@ -14,10 +14,11 @@ bash scan.sh target - запуск
 
 посмотреть из чего состоит сайт
 https://gist.github.com/Spix0r/381600c889fee73df64b14c9abf2677b
-
+# пример медленного сканирования 
 proxychains nmap -sS -Pn -T1 --scan-delay 5s --max-parallelism 1 -n -v example.com
 sudo dirsearch -u example.com -e --random-agents --timeout=20 --delay=$(shuf -i 5-20 -n 1) -t 1
 proxychains sudo dirsearch -u https://example.com/  --timeout=20 --delay=$(shuf -i 5-20 -n 1) -t 1
+sudo nuclei -target  example.com  -rl 1 -rld 60 -c 1  -timeout 15 -retries 1
 
 
 echo example.com | dnsx -recon # поиск dns записей
