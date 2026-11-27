@@ -4,6 +4,11 @@ https://shazzer.co.uk/vectors/697ca88a274f790a0323f684   проверка раз
 xsser -u https://example.com -c 20 --Cl
 
 
+https://github.com/epsylon/xsser?ysclid=mwynieekr7398224329
+xsser -u "https://exaple.com/search/?q=XSS" --auto --reverse-check --statistics
+
+
+
 https://cspbypass.com/  csp bypass search
 
 "><script>alert(document.cookie)</script>
